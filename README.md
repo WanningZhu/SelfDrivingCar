@@ -1,4 +1,4 @@
-## Wanning Zhu Project4
+## Self Driving Car
 This project uses ARA* search algorithm to achieve Path Planning, at the same time all obstacles are driving along their own paths.
 #### Command Line
 - `catkin_make`.
