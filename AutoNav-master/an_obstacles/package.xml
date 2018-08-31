@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>an_obstacles</name>
+  <version>0.0.0</version>
+  <description>The an_obstacles package.  It reads the scenario from a file, then publishes data on all static and dynamic obstacles both to the planner and to rviz</description>
+
+  <maintainer email="jon@robotwits.como">RobotWits</maintainer>
+
+  <license>BSD</license>
+
+   <depend>roscpp</depend>
+   <depend>rospy</depend>
+   <depend>geometry_msgs</depend>
+   <depend>std_msgs</depend>
+   <depend>an_messages</depend>
+   <depend>visualization_msgs</depend>
+   <depend>tf</depend>
+
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>

@@ -1,0 +1,13 @@
+Header header
+int32 id
+float64 width
+float64 length
+float64 height
+float64 outer_radius
+float64 inner_radius
+an_messages/trajectory[] path
+float64[] probability
+int16 rgb_r
+int16 rgb_g
+int16 rgb_b
+int16 rgb_a
