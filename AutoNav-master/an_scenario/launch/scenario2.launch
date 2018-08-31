@@ -1,0 +1,18 @@
+<launch>
+  <param name="/MPRIM_FILE" value="$(find an_planner)/config/mprim.txt" />
+  <param name="/MAP_FILE" value="$(find an_scenario)/config/scenario2/map.txt" />
+  <param name="/OBS_FILE" value="$(find an_scenario)/config/scenario2/obstacles.txt" />
+    <param name="/goalx" value="1900" />
+    <param name="/goaly" value="7.4" />
+     <param name="/driver_intends_to_change_lanes" value="0" />
+
+
+  <node name="map_manager" pkg="an_map_manager" type="an_map_manager" output="screen" />
+  <node name="controller" pkg="an_controller" type="an_controller" output="screen" />
+  <!-- <node name="traj_generator" pkg="an_test" type="traj_generator" output="screen" /> -->
+  <node name="obstacles" pkg="an_obstacles" type="an_obstacles" output="screen" />
+  <node name="rviz" pkg="rviz" type="rviz" />
+  <node pkg="tf" type="static_transform_publisher" name="link_broadcaster" args="0 0 0 0 0 0 1 map world 1000" />
+  <node name="planner" pkg="an_planner" type="an_planner" output="screen" />
+<!-- launch-prefix="valgrind" -->
+</launch>
