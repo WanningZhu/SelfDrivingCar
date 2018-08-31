@@ -1,0 +1,20 @@
+TODO for Autonav:
+
+update controller to use rosparam for frame name
+update map_manager to use rosparam for frame name
+update obstacle to use rosparam for frame name
+update traj_generator to use rosparam for frame name
+
+controller should load initial position from scenario params
+
+split controller into vehicle model/visualization and controller
+
+obstacle node should examine multiple paths per dynamic vehicle
+
+obstacle node not drawing moving obstacles correctly... or advancing them at the right speed...
+
+Is the vehicle model advancing the ego vehicle at the correct speed?
+
+stop all opbstacels when ego reaches goal
+
+
